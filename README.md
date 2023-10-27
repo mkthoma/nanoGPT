@@ -5,15 +5,15 @@ This repo contains code for training a nano GPT from scratch on any dataset. The
 ## Hyperparameters
 The notebook defines various hyperparameters at the beginning of the script. These hyperparameters control the training process and model architecture. Here's an explanation of some important hyperparameters:
 
-batch_size: The number of independent sequences processed in parallel during training.
-block_size: The maximum context length for predictions (bigram context).
-max_iters: The maximum number of training iterations.
-learning_rate: The learning rate for the optimizer.
-device: 'cuda' if a GPU is available; otherwise, 'cpu'.
-n_embd: The embedding dimension for tokens.
-n_head: The number of self-attention heads.
-n_layer: The number of Transformer layers.
-dropout: Dropout rate for regularization.
+- batch_size: The number of independent sequences processed in parallel during training.
+- block_size: The maximum context length for predictions (bigram context).
+- max_iters: The maximum number of training iterations.
+- learning_rate: The learning rate for the optimizer.
+- device: 'cuda' if a GPU is available; otherwise, 'cpu'.
+- n_embd: The embedding dimension for tokens.
+- n_head: The number of self-attention heads.
+- n_layer: The number of Transformer layers.
+- dropout: Dropout rate for regularization.
 
 ## Model Architecture
 The Bigram Language Model is based on the Transformer architecture, which has been widely adopted in natural language processing tasks due to its ability to capture long-range dependencies in sequential data. Here's a detailed explanation of each component in the model:
